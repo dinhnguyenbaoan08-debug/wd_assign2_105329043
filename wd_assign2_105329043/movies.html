@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Ormond Movie Theatre is a movie discovery and ticket booking website.">
+    <meta name="author" content="Nguyen Bao An Dinh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ormond Movie Theatre</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Ormond Movie Theatre</h1>
+        <p>Discover, Explore and Book Your Favourite Movies</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="movies.html" class="active">Movies</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="register.html">Register</a>
+        <a href="booking.html">Booking</a>
+        <a href="watchlist.html">Watchlist</a>
+    </nav>
+
+    <main>
+        <section class="movies">
+            <h2>Now Showing</h2>
+
+            <p>
+                Explore our collection of movies and
+                choose your favourite film to book tickets.
+            </p>
+
+            <div class="movie-grid">
+
+                <article class="movie-card">
+                    <img src="images/movie 1.jpg" alt="Elemental movie poster">
+
+                    <h3>Elemental</h3>
+
+                    <p><strong>Genre:</strong> Animation, Romance</p>
+                    <p><strong>Age Rating:</strong> Parental Guidance Suggested</p>
+                    <p><strong>Running Time:</strong> 101 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        Elemental tells the story of Ember,
+                        a young fire element who lives in
+                        Element City. She meets Wade, a
+                        water element with a different
+                        personality and background. Although
+                        fire and water are not supposed to
+                        mix, they develop a special connection.
+                        Together, they discover new experiences
+                        and learn about friendship, love and
+                        understanding differences. Ember also
+                        faces challenges involving her family
+                        expectations and her own dreams.
+                        This colourful animated movie offers
+                        an emotional story about relationships,
+                        identity and following your heart.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $17.00</p>
+                    <p><strong>Screening:</strong> 11:00 AM, 3:00 PM, 7:00 PM, 11:00 PM</p>
+
+                    <a href="booking.html?movie=elemental"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('elemental')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/movie 2.jpg" alt="MEGAN horror movie poster">
+
+                    <h3>MEGAN</h3>
+
+                    <p><strong>Genre:</strong> Horror, Science Fiction</p>
+                    <p><strong>Age Rating:</strong> Mature Audience</p>
+                    <p><strong>Running Time:</strong> 102 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        MEGAN follows Gemma, a robotics
+                        engineer who creates an advanced
+                        artificial intelligence doll.
+                        The doll is designed to become
+                        a companion and protector for
+                        Gemma's young niece, Cady.
+                        At first, M3GAN appears helpful
+                        and intelligent, but her behaviour
+                        gradually becomes dangerous.
+                        As she develops independence,
+                        she begins making frightening
+                        decisions to protect Cady.
+                        Gemma must find a way to stop
+                        her creation before more harm
+                        occurs. This science fiction
+                        horror movie explores artificial
+                        intelligence, technology and
+                        the risks of losing control.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $18.00</p>
+                    <p><strong>Screening:</strong> 2:00 PM,  6:00 PM, 9:00 PM, 11:00 PM</p>
+
+                    <a href="booking.html?movie=megan"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('megan')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/movie 3.jpg" alt="Toy Story movie poster">
+
+                    <h3>Toy Story</h3>
+
+                    <p><strong>Genre:</strong> Animation, Comedy</p>
+                    <p><strong>Age Rating:</strong> General Audience</p>
+                    <p><strong>Running Time:</strong> 81 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        Toy Story follows a group of toys
+                        that come to life when their owner
+                        is away. Woody, a cowboy doll,
+                        has always been Andy's favourite
+                        toy. However, everything changes
+                        when Buzz Lightyear arrives.
+                        Woody becomes jealous and the
+                        two toys begin an unexpected
+                        adventure. Along the way, they
+                        learn about friendship, teamwork
+                        and accepting differences.
+                        This animated movie combines
+                        humour, adventure and heartwarming
+                        moments, making it an enjoyable
+                        choice for children and families.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $15.00</p>
+                    <p><strong>Screening:</strong> 10:00 AM, 2:00 PM, 6:00 PM, 10:00 PM</p>
+
+                    <a href="booking.html?movie=toy-story"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('toy-story')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/movie 4.jpg" alt="Inside Out movie poster">
+
+                    <h3>Inside Out</h3>
+
+                    <p><strong>Genre:</strong> Animation, Comedy</p>
+                    <p><strong>Age Rating:</strong> Parental Guidance Suggested</p>
+                    <p><strong>Running Time:</strong> 95 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        Inside Out tells the story of
+                        Riley, a young girl whose emotions
+                        guide her daily experiences.
+                        Joy, Sadness, Anger, Fear and
+                        Disgust work together inside her
+                        mind. When Riley moves to a new
+                        city, her emotions struggle to
+                        adapt to the changes. Joy and
+                        Sadness must find their way back
+                        to headquarters while discovering
+                        the importance of every emotion.
+                        The movie offers a creative and
+                        meaningful story about growing up,
+                        family relationships and
+                        understanding feelings.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $16.00</p>
+                    <p><strong>Screening:</strong> 9:00 AM, 12:00 PM, 4:00 PM, 8:00 PM</p>
+
+                    <a href="booking.html?movie=inside-out"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('inside-out')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/movie 5.jpg" alt="Finding Nemo movie poster">
+
+                    <h3>Finding Nemo</h3>
+
+                    <p><strong>Genre:</strong> Animation, Adventure</p>
+                    <p><strong>Age Rating:</strong> General Audience</p>
+                    <p><strong>Running Time:</strong> 100 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        Finding Nemo follows Marlin,
+                        a protective clownfish who
+                        lives in the ocean with his
+                        son Nemo. When Nemo is captured
+                        by a diver, Marlin begins a
+                        long journey to find him.
+                        Along the way, he meets Dory,
+                        a friendly fish who has trouble
+                        remembering things. Together,
+                        they face dangerous situations
+                        and meet different sea creatures.
+                        Meanwhile, Nemo tries to
+                        escape from a fish tank.
+                        This animated adventure explores
+                        courage, friendship, family
+                        relationships and the importance
+                        of trusting others.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $15.00</p>
+                    <p><strong>Screening:</strong> 10:30 AM, 2:30 PM, 6:30 PM, 10:30 PM</p>
+
+                    <a href="booking.html?movie=finding-nemo"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('finding-nemo')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+                <article class="movie-card">
+                    <img src="images/movie 6.jpg" alt="Tangled movie poster featuring Rapunzel">
+
+                    <h3>Tangled (Rapunzel)</h3>
+
+                    <p><strong>Genre:</strong> Animation, Adventure</p>
+                    <p><strong>Age Rating:</strong> Parental Guidance Suggested</p>
+                    <p><strong>Running Time:</strong> 100 minutes</p>
+
+                    <p>
+                        <strong>Description:</strong>
+                        Tangled tells the story of
+                        Rapunzel, a young princess with
+                        magical golden hair who has
+                        spent her life inside a tower.
+                        She dreams of exploring the
+                        outside world and discovering
+                        the meaning of the floating
+                        lanterns she sees every year.
+                        One day, she meets Flynn Rider,
+                        a charming thief who helps
+                        her escape. Together, they
+                        experience exciting adventures
+                        and discover important secrets
+                        about Rapunzel's past.
+                        This animated movie combines
+                        comedy, romance and adventure
+                        while exploring freedom,
+                        courage and following dreams.
+                    </p>
+
+                    <p><strong>Ticket Price:</strong> $16.00</p>
+                    <p><strong>Screening:</strong> 11:30 AM, 3:30 PM, 6:00PM, 10:00 PM</p>
+
+                    <a href="booking.html?movie=tangled"
+                       class="button">Book Now</a>
+                    <button type="button" class="button"
+                    onclick="addMovie('tangled')">
+                        Add to Watchlist
+                    </button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Ormond Movie Theatre. All rights reserved.</p>
+    </footer>
+</body>
+</html>

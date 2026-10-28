@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Find movie recommendations at The Ormond Movie Theatre.">
+    <meta name="author" content="Nguyen Bao An Dinh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Ormond Movie Theatre</h1>
+        <p>Discover, Explore and Book Your Favourite Movies</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="register.html" class="active">Register</a>
+        <a href="booking.html">Booking</a>
+        <a href="watchlist.html">Watchlist</a>
+    </nav>
+
+    <main>
+        <section class="register">
+            <h2>Create Your Account</h2>
+            <p>
+                Please complete the registration form below.
+            </p>
+
+            <form id="registerForm" method="post">
+
+                <fieldset>
+                    <legend>Account Information</legend>
+
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword"> Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personal Preferences</legend>
+
+                    <div class="form-group">
+                        <p>Gender:</p>
+
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Preferred Movie Genres:</p>
+
+                        <div>
+                            <input type="checkbox" id="animation" name="movieGenre" value="Animation">
+                            <label for="animation">Animation</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="comedy" name="movieGenre" value="Comedy">
+                            <label for="comedy">Comedy</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="adventure" name="movieGenre" value="Adventure">
+                            <label for="adventure">Adventure</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="romance" name="movieGenre" value="Romance">
+                            <label for="romance">Romance</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="horror" name="movieGenre" value="Horror">
+                            <label for="horror">Horror</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="scifi" name="movieGenre" value="Science Fiction">
+                            <label for="scifi">Science Fiction</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country/Region:</label>
+
+                        <select id="country" name="country">
+                            <option value="">Select a country</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <p id="registerError"></p>
+
+                <div class="form-group">
+                    <input type="submit" value="Register"
+                           class="button">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Ormond Movie Theatre. All rights reserved.</p>
+    </footer>
+</body>
+</html>
